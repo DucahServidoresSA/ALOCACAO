@@ -4,13 +4,13 @@ echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 rm *.sh > /dev/null 2>&1
-wget https://www.dropbox.com/s/tdsmnzdni0yu2xz/criarusuario.sh > /dev/null 2>&1
-wget https://www.dropbox.com/s/tdsmnzdni0yu2xz/criarusuario.sh > /dev/null 2>&1
-wget https://www.dropbox.com/s/qnqo6lc9biraxjv/AlterarSenha.sh > /dev/null 2>&1
-wget https://www.dropbox.com/s/2alf53pke8u6zi6/AlterarData.sh > /dev/null 2>&1
-wget https://www.dropbox.com/s/ai6v1spuinz8k4o/KillUser.sh > /dev/null 2>&1
-wget https://www.dropbox.com/s/mcgj4ua1fnuz40x/sshmonitor.sh > /dev/null 2>&1
-wget https://www.dropbox.com/s/83dukylewssvxyn/alterarlimite.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DucahServidoresSA/ALOCACAO/master/criarusuario.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DucahServidoresSA/ALOCACAO/master/criarusuario.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DucahServidoresSA/ALOCACAO/master/AlterarSenha.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DucahServidoresSA/ALOCACAO/master/AlterarData.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DucahServidoresSA/ALOCACAO/master/KillUser.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DucahServidoresSA/ALOCACAO/master/sshmonitor.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/DucahServidoresSA/ALOCACAO/master/alterarlimite.sh > /dev/null 2>&1
 chmod 777 *sh
 echo -e "\n\033[1;32mAGUARDE...\033[0m"
 apt-get install cron -y > /dev/null 2>&1
